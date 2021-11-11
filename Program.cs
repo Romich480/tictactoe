@@ -25,7 +25,6 @@ namespace MyApps
 
             for (int z = 0; z < 9; z++)
             {
-                //вывод
                 int k = 0;
                 for (int i = 0; i < 3; i++)
                 {
@@ -39,7 +38,6 @@ namespace MyApps
                 }
                 Console.WriteLine(" ");
 
-                //ход крестиков
                 if ((z % 2) == 0)
                 {
                     bool check = false;
@@ -48,9 +46,9 @@ namespace MyApps
                         Console.WriteLine("Ход крестиков");
                         string turn0 = Console.ReadLine();
                         int turncross = int.Parse(turn0);
-                        if ((turncross > 0) && (turncross < 10))//проверка на правильность числа
+                        if ((turncross > 0) && (turncross < 10))
                         {
-                            if (win[turncross - 1] == 0)//проверяем не занята ли клетка
+                            if (win[turncross - 1] == 0)
                             {
                                 massiv[turncross - 1] = "X";
                                 Console.WriteLine(" ");
